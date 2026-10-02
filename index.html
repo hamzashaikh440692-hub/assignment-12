@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buildream</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  color:#333
+}
+*{
+  box-sizing:border-box
+}
+a{
+  text-decoration:none;
+  color:inherit
+}
+.preview,.topbar{
+  background:#343a40;
+  color:white;
+  padding:12px 8%
+}
+.preview{
+  background:#292929;
+  font-size:25px
+}
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  font-size:13px
+}
+b,small{
+  color:orange
+}
+header{
+  background:#3b4048;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap
+}
+.logo{
+  background:orange;
+  padding:25px 40px;
+  font-weight:bold
+}
+nav{
+  padding:20px;
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap
+}
+nav a{
+  color:white;
+  font-size:13px
+}
+.hero{
+  height:500px;
+  background:linear-gradient(#0006,#0006)
+  ,url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80') center/cover;
+  display:flex;
+  align-items:center;
+  padding:8%;
+  color:white
+}
+.hero h1{
+  font-size:45px
+}
+.hero h1 span{
+  display:inline-block;
+  animation:ease-out
+}
+@keyframes jump{
+  50%{transform:translateY(-10px)}
+}
+.btn{
+  display:inline-block;
+  background:orange;
+  padding:13px 24px;
+  margin-top:15px
+}
+section{
+  padding:55px 8%
+}
+.heading{
+  text-align:center;
+  margin-bottom:30px
+}
+.cards,.team{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap
+}
+.card{
+  background:#f5f5f5;
+  padding:25px;
+  flex:1 1 200px}
+.card h3{
+  color:orange
+}
+.project,.member{
+  flex:1 1 200px;
+  background:#f5f5f5;
+  text-align:center;
+  position:relative;
+  overflow:hidden
+}
+.project img,.member img{
+  width:100%;
+  height:300px;
+  object-fit:cover
+}
+.member-info{
+  padding:15px;
+  background:white
+}
+.member:hover .member-info{
+  background:orange;
+  color:white
+}
+.social{
+  position:absolute;
+  top:35%;
+  left:-45px;
+  display:grid;
+  gap:5px;
+  transition:.3s
+}
+.social a{
+  background:#343a40;
+  color:white;
+  padding:8px;
+  border-radius:50%
+}
+.member:hover .social{
+  left:0
+}
+.contact-area{
+  display:flex;
+  gap:35px
+}
+.quote,.faq{
+  width:50%;
+  padding:25px
+}
+input,select,textarea{
+  width:100%;
+  padding:13px;
+  margin:8px 0 18px;
+  border:1px solid #ddd
+}
+textarea{
+  height:150px
+}
+details{
+  border:1px solid #ddd
+}
+summary{
+  padding:15px;
+  cursor:pointer;
+  font-weight:bold
+}
+details[open] summary{
+  background:orange
+}
+.answer{
+  padding:18px
+}
+.newsletter{
+  background:orange;
+  padding:45px 8%;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center
+}
+.newsletter form{
+  display:flex;
+  gap:8px
+}
+button{
+  padding:12px 20px;
+  background:#222;
+  color:white;
+  border:0
+}
+footer{
+  background:#343a40;
+  color:white;
+  padding:55px 8%
+}
+.footer{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap
+}
+.footer div{
+  flex:1 1 180px
+}
+.post{
+  margin:12px 0
+}
+.post img{
+  width:65px;
+  height:55px;
+  object-fit:cover;
+  float:left;
+  margin-right:10px
+}
+footer a{
+  display:block;margin:8px 0
+}
+.copy{
+  text-align:center;
+  background:#222;
+  color:white;
+  padding:15px
+}
+@media(max-width:700px){
+.topbar,.newsletter,.contact-area{
+  flex-direction:column
+}
+.quote,.faq{
+  width:100%
+}
+.hero h1{
+  font-size:32px
+}
+.newsletter form{
+  flex-direction:column
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="preview">colorlib.　 <small>＋ BUILDREAM</small></div>
+
+<div class="topbar">
+<p><b>Free Call:</b> +1 415 555 0142</p>
+<p><b>Email Address:</b> info@example.com</p>
+</div>
+
+<header>
+<div class="logo">BUILDREAM</div>
+<nav>
+<a href="#home">HOME</a><a href="#about">ABOUT</a>
+<a href="#services">SERVICES</a><a href="#projects">PROJECTS</a>
+<a href="#team">TEAM</a><a href="#contact">CONTACT</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<h1><span>B</span><span>U</span><span>I</span><span>L</span><span>D</span><br>
+<span>Y</span><span>O</span><span>U</span><span>R</span> DREAM</h1>
+<p>We build your future with quality and trust.</p>
+<a href="#contact" class="btn">REQUEST A QUOTE</a>
+</div>
+</div>
+
+<section id="about">
+<div class="heading"><h2>Welcome to Buildream</h2>
+<p>We build modern homes and commercial buildings.</p></div>
+</section>
+
+<section id="services">
+<div class="heading"><h2>Our Services</h2></div>
+<div class="cards">
+<div class="card"><h3>Construction</h3><p>Quality building construction.</p></div>
+<div class="card"><h3>Architecture</h3><p>Modern designs for your needs.</p></div>
+<div class="card"><h3>Renovation</h3><p>Improve your existing property.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="heading"><h2>Our Projects</h2></div>
+<div class="cards">
+<div class="project"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"><h3>Modern Office</h3></div>
+<div class="project"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80"><h3>Dream House</h3></div>
+<div class="project"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"><h3>Building Project</h3></div>
+</div>
+</section>
+
+<section id="team">
+<div class="heading"><h2>Our Team</h2><p>Meet our professional engineers</p></div>
+<div class="team">
+<div class="member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"><div class="social"><a href="#">♥</a><a href="#">f</a><a href="#">◎</a><a href="#">in</a></div><div class="member-info"><h3>Lionel Wurtchbach</h3><p>SENIOR ENGINEER</p></div></div>
+<div class="member"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"><div class="social"><a href="#">♥</a><a href="#">f</a><a href="#">◎</a><a href="#">in</a></div><div class="member-info"><h3>Mike Nintido</h3><p>SENIOR ENGINEER</p></div></div>
+<div class="member"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"><div class="social"><a href="#">♥</a><a href="#">f</a><a href="#">◎</a><a href="#">in</a></div><div class="member-info"><h3>Bea Alam</h3><p>SENIOR ENGINEER</p></div></div>
+<div class="member"><img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=500&q=80"><div class="social"><a href="#">♥</a><a href="#">f</a><a href="#">◎</a><a href="#">in</a></div><div class="member-info"><h3>John Buffer</h3><p>SENIOR ENGINEER</p></div></div>
+</div>
+</section>
+
+<div class="contact-area" id="contact">
+<div class="quote">
+<small>DROP A MESSAGE</small>
+<h2>Request A Quote</h2>
+<form>
+<label>YOUR FULL NAME</label><input type="text" placeholder="Your Full Name">
+<label>EMAIL ADDRESS</label><input type="email" placeholder="Email">
+<label>SELECT SUBJECT</label>
+<select><option>Construction Services</option><option>Architecture Design</option><option>Renovation</option></select>
+<label>MESSAGE</label><textarea placeholder="Message"></textarea>
+<button>SEND MESSAGE</button>
+</form>
+</div>
+
+<div class="faq">
+<small>Frequently Asked Questions</small>
+<h1>You Want To Ask Something From Us?</h1>
+<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+<details open><summary>What are the problems in construction?</summary><div class="answer">The usual ones are delays, budget overruns and unclear plans. We agree the scope, schedule and price before work starts.</div></details>
+<details><summary>What is best practice in construction?</summary><div class="answer">Good planning, clear communication and safety checks help projects run smoothly.</div></details>
+<details><summary>How long does a typical project take?</summary><div class="answer">It depends on the size and type of project.</div></details>
+</div>
+</div>
+
+<div class="newsletter">
+<div><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates on projects, industry news, and exclusive offers.</p></div>
+<form><input type="email" placeholder="Enter your email address"><button>SUBSCRIBE</button></form>
+</div>
+
+<footer>
+<div class="footer">
+<div><h3>BUILDREAM</h3><p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p><p>♥　f　◎</p></div>
+<div><h3>Recent Posts</h3>
+<div class="post"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=150&q=80">Biggest Construction in New York, USA<br><small>Admin　19</small></div>
+<div class="post"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=150&q=80">Biggest Construction in New York, USA<br><small>Admin　19</small></div>
+<div class="post"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=150&q=80">Biggest Construction in New York, USA<br><small>Admin　19</small></div>
+</div>
+<div><h3>Quick Links</h3><a href="#home">› Home</a><a href="#about">› About</a><a href="#services">› Services</a><a href="#projects">› Project</a><a href="#contact">› Contact Us</a></div>
+<div><h3>Have a Question?</h3><p>203 Fake St. Mountain View, San Francisco, California, USA</p><p>+1 415 555 0142</p><p>info@example.com</p></div>
+</div>
+</footer>
+
+<div class="copy">Copyright © 2026 Buildream. All rights reserved.</div>
+</body>
+</html>
