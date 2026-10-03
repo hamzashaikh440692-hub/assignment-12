@@ -135,6 +135,97 @@ section{
   padding:8px;
   border-radius:50%
 }
+ .services {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .services h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            width: 60px;
+            height: 4px;
+            background: #ff9800;
+            margin: 0 auto 45px;
+            border-radius: 10px;
+        }
+
+        .service-boxes {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 32%;
+            padding: 35px 28px;
+            background: #f7f7f7;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #eee;
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            background: #fff;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            background: #ff9800;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .box h2 {
+            font-size: 21px;
+            color: #ff9800;
+            margin-bottom: 12px;
+        }
+
+        .box p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #222;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 800px) {
+            .service-boxes {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+            }
+        }
 .member:hover .social{
   left:0
 }
@@ -267,15 +358,39 @@ footer a{
 <div class="heading"><h2>Welcome to Buildream</h2>
 <p>We build modern homes and commercial buildings.</p></div>
 </section>
-
-<section id="services">
-<div class="heading"><h2>Our Services</h2></div>
-<div class="cards">
-<div class="card"><h3>Construction</h3><p>Quality building construction.</p></div>
-<div class="card"><h3>Architecture</h3><p>Modern designs for your needs.</p></div>
-<div class="card"><h3>Renovation</h3><p>Improve your existing property.</p></div>
-</div>
-</section>
+<section class="services">
+        <h1>Our Services</h1>
+        <div class="line"></div>
+        <div class="service-boxes">
+            <div class="box">
+                <div class="icon">🏗️</div>
+                <h2>Construction</h2>
+                <p>
+                    Quality building construction with strong
+                    materials and professional workmanship.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <div class="icon">📐</div>
+                <h2>Architecture</h2>
+                <p>
+                    Modern and creative architectural designs
+                    specially made for your needs.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <div class="icon">🔨</div>
+                <h2>Renovation</h2>
+                <p>
+                    Improve and transform your existing property
+                    with our professional renovation services.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
 <section id="projects">
 <div class="heading"><h2>Our Projects</h2></div>
@@ -334,10 +449,10 @@ footer a{
 <div class="post"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=150&q=80">Biggest Construction in New York, USA<br><small>Admin　19</small></div>
 </div>
 <div><h3>Quick Links</h3><a href="#home">› Home</a><a href="#about">› About</a><a href="#services">› Services</a><a href="#projects">› Project</a><a href="#contact">› Contact Us</a></div>
-<div><h3>Have a Question?</h3><p>203 Fake St. Mountain View, San Francisco, California, USA</p><p>+1 415 555 0142</p><p>info@example.com</p></div>
+<div><h3>Have a Question?</h3><p> Mountain View, San Francisco, California, USA</p><p>+1 415 555 0142</p><p>info@example.com</p></div>
 </div>
 </footer>
 
-<div class="copy">Copyright © 2026 Buildream. All rights reserved.</div>
+<div class="copy"> Buildream.</div>
 </body>
 </html>
